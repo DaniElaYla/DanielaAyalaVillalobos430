@@ -1,0 +1,16 @@
+class program {
+    program () {
+        // TODO poner codigo aqui
+        iterate (100)
+        if(nextToABeeper)
+        {
+         pickbeeper(); 
+        }
+        else
+        {
+        putbeeper();
+        move();
+        }
+        turnoff();
+    }
+}

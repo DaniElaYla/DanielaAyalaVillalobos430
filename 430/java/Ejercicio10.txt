@@ -1,0 +1,37 @@
+class program {
+    void turnringht()
+    {
+      iterate(3)
+      {
+        turnleft();
+      }
+    }
+    void num(n)
+    {
+      iterate(succ(succ(n)))
+      {
+        if(frontIsBlocked)
+        {
+         turnringht();
+         move();
+         turnleft();
+         move();
+         turnleft();
+         move();
+         turnringht();
+        }
+       else
+       {
+       move();
+       }
+      }
+     iterate(pred(pred(n)))
+     {
+     putbeeper();
+     }
+    }
+    program () {
+    num(3);
+        turnoff();
+    }
+}
